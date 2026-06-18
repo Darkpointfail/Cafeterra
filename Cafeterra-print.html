@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cafeterra, Le charme parisien au cœur du Vieux-Montréal</title>
+<meta name="description" content="Cafeterra, café tranquille sans ordinateurs au cœur du Vieux-Port. Cuisine européenne, brunch et café de spécialité : parfait pour démarrer la journée ou faire une pause. 243 Rue Notre-Dame Ouest.">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="images/logo/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="images/logo/favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/logo/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<style>
+@media print{
+  @page{ size:A4 portrait; margin:0; }
+  html,body{ background:#FBF8F2 !important; }
+  *,*::before,*::after{ -webkit-print-color-adjust:exact !important; print-color-adjust:exact !important; }
+  /* freeze animations/transitions at end state */
+  *,*::before,*::after{
+    animation-delay:-99s !important; animation-duration:.001s !important;
+    animation-iteration-count:1 !important; animation-fill-mode:both !important;
+    animation-play-state:running !important; transition-duration:0s !important;
+  }
+  /* reveals always visible in print */
+  .reveal,.reveal.armed{ opacity:1 !important; transform:none !important; }
+  /* neutralise JS parallax offsets */
+  .hero-photo img,.about-figure .frame img,.ambiance .bg img{ transform:none !important; height:100% !important; }
+  /* hide interactive chrome */
+  .nav,.drawer,.scroll-cue,.nav-burger,#tweaks-root,.twk-panel,.twk-fab,.quote-dots{ display:none !important; }
+  body::before{ display:none !important; }
+  /* each major block on its own page */
+  .hero{ min-height:100vh !important; height:100vh; page-break-after:always; break-after:page; }
+  .section,.ambiance,.footer{ page-break-before:always; break-before:page; padding-block:46px !important; }
+  .ambiance .wrap{ padding-block:90px !important; }
+  .menu-foot-cta,.footer{ page-break-before:auto; break-before:auto; }
+  /* avoid awkward splits */
+  .spec-card,.menu-cat,.about-figure,.gal-cell,.info-grid .map-frame,.contact-line,.hours{ break-inside:avoid; page-break-inside:avoid; }
+  .map-frame{ min-height:320px !important; }
+  .hero-photo img{ object-position:center; }
+}
+</style>
+</head>
+<body data-hero="cinematic">
+
+<!-- ============ NAV ============ -->
+<nav class="nav" aria-label="Navigation principale">
+  <div class="nav-bar">
+    <button class="nav-burger" type="button" aria-label="Menu"><span></span><span></span><span></span></button>
+    <div class="nav-cluster nav-cluster--left">
+      <div class="lang" role="group" aria-label="Langue / Language">
+        <button type="button" data-lang="fr" class="on">FR</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#apropos" data-fr="À propos" data-en="About">À propos</a></li>
+        <li><a href="#specialites" data-fr="Spécialités" data-en="Specialties">Spécialités</a></li>
+        <li><a href="#menu" data-fr="Menu" data-en="Menu">Menu</a></li>
+        <li><a href="#galerie" data-fr="Galerie" data-en="Gallery">Galerie</a></li>
+        <li><a href="#visiter" data-fr="Nous visiter" data-en="Visit">Nous visiter</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="nav-end">
+    <a class="nav-cta" href="menu.html" data-fr="La carte" data-en="The menu">La carte</a>
+    <a class="nav-logo" href="#top" aria-label="Cafeterra, Café &amp; Pâtisseries">
+      <img src="images/logo/cafeterra-logo-white-dnu.png" alt="" width="102" height="102" decoding="async">
+    </a>
+  </div>
+</nav>
+
+<!-- mobile drawer -->
+<div class="drawer">
+  <button class="close" aria-label="Fermer">&times;</button>
+  <a href="#apropos" data-fr="À propos" data-en="About">À propos</a>
+  <a href="#specialites" data-fr="Spécialités" data-en="Specialties">Spécialités</a>
+  <a href="menu.html" data-fr="Menu complet" data-en="Full menu">Menu complet</a>
+  <a href="#galerie" data-fr="Galerie" data-en="Gallery">Galerie</a>
+  <a href="#visiter" data-fr="Nous visiter" data-en="Visit">Nous visiter</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <div class="hero-photo" data-parallax="0.12">
+    <img id="hero-img" src="assets/mural-web.jpg" alt="Intérieur de Cafeterra, mur de briques et fresque de café">
+  </div>
+  <div class="hero-scrim"></div>
+  <div class="hero-inner">
+    <span class="kicker" data-fr="Vieux-Port · Pause &amp; détente" data-en="Old Port · Pause &amp; unwind">Vieux-Port · Pause &amp; détente</span>
+    <h1 class="hero-title">Cafeterra</h1>
+    <p class="hero-sub" data-fr="Un café tranquille en plein Vieux-Port, sans ordinateurs, pour un vrai moment de détente." data-en="A calm café in the heart of Old Montreal, no laptops, just a moment to unwind.">Un café tranquille en plein Vieux-Port, sans ordinateurs, pour un vrai moment de détente.</p>
+    <hr class="hero-rule">
+    <div class="hero-cta">
+      <a class="btn btn-solid" href="menu.html" data-fr="Découvrir le menu" data-en="Explore the menu">Découvrir le menu</a>
+      <a class="btn btn-ghost" href="#visiter" data-fr="Nous visiter" data-en="Visit us">Nous visiter</a>
+    </div>
+  </div>
+  <div class="scroll-cue"><span data-fr="Défiler" data-en="Scroll">Défiler</span><span class="bar"></span></div>
+</header>
+
+<!-- ============ À PROPOS ============ -->
+<section class="section paper" id="apropos">
+  <div class="wrap about-grid">
+    <div class="about-copy">
+      <span class="kicker reveal" data-fr="Notre histoire" data-en="Our story">Notre histoire</span>
+      <h2 class="section-title reveal" data-d="1" data-fr="Un café familial, <em>créé avec amour</em>" data-en="A family café, <em>made with love</em>">Un café familial, <em>créé avec amour</em></h2>
+      <p class="reveal" data-d="2" data-fr="Cafeterra est un petit café familial absolument incroyable, créé avec amour et soin pour le confort et le plaisir esthétique de chacun de nos clients, qui souhaitent profiter de notre décor unique, de notre atmosphère agréable et d'une musique jazz apaisante." data-en="Cafeterra is an absolutely incredible family café, created with love and care for the comfort and aesthetic pleasure of every guest who wants to enjoy our unique décor, our pleasant atmosphere and soothing jazz music.">Cafeterra est un petit café familial absolument incroyable, créé avec amour et soin pour le confort et le plaisir esthétique de chacun de nos clients, qui souhaitent profiter de notre décor unique, de notre atmosphère agréable et d'une musique jazz apaisante.</p>
+      <p class="reveal" data-d="2" data-fr="Et surtout, déguster un café incroyablement délicieux et des pâtisseries faites maison, qui vous raviront ! De plus, notre magnifique établissement propose à ses clients des petits-déjeuners et des menus lunch avec de délicieux plats faits comme à la maison." data-en="And above all, savour incredibly delicious coffee and homemade pastries that will delight you! Our beautiful space also offers breakfast and lunch menus with delicious homestyle dishes.">Et surtout, déguster un café incroyablement délicieux et des pâtisseries faites maison, qui vous raviront ! De plus, notre magnifique établissement propose à ses clients des petits-déjeuners et des menus lunch avec de délicieux plats faits comme à la maison.</p>
+      <blockquote class="pullquote reveal" data-d="2" data-fr="« Sentez-vous comme chez vous. »" data-en="“Feel right at home.”">« Sentez-vous comme chez vous. »</blockquote>
+      <div class="stats reveal" data-d="3">
+        <div class="stat stat--no-laptop">
+          <div class="v stat-v--no-laptop">
+            <span class="stat-no-laptop-icons" aria-hidden="true"><span class="stat-no-laptop-device">💻</span><span class="stat-no-laptop-ban">🚫</span></span>
+            <span class="stat-no-laptop-text" data-fr="Ordinateur interdit" data-en="No laptops">Ordinateur interdit</span>
+          </div>
+        </div>
+        <div class="stat"><div class="v">EU</div><div class="l" data-fr="Cuisine européenne" data-en="European cuisine">Cuisine européenne</div></div>
+        <div class="stat"><div class="v">Vieux-Port</div><div class="l" data-fr="Montréal" data-en="Montreal">Montréal</div></div>
+      </div>
+    </div>
+    <figure class="about-figure reveal" data-d="1">
+      <span class="corner"></span>
+      <div class="frame" data-parallax="0.06"><img src="assets/lounge-web.jpg" alt="Salon de Cafeterra avec fauteuils, fougères et vitrine"></div>
+      <figcaption class="tag"><div class="n">243</div><div class="t" data-fr="Rue Notre-Dame Ouest" data-en="Notre-Dame Street West">Rue Notre-Dame Ouest</div></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ CUISINE & BOISSONS ============ -->
+<section class="menu-split" aria-label="La carte">
+  <a class="menu-split-panel reveal" href="menu.html#brunch">
+    <div class="menu-split-media">
+      <image-slot id="split-cuisine" src="images/plats/croissant-oeuf-bacon.jpg" shape="rect" radius="0" placeholder="Cuisine"></image-slot>
+    </div>
+    <div class="menu-split-scrim"></div>
+    <span class="menu-split-frame" data-fr="Cuisine" data-en="Food">Cuisine</span>
+  </a>
+  <a class="menu-split-panel reveal" data-d="1" href="menu.html#cafe">
+    <div class="menu-split-media">
+      <image-slot id="split-boissons" src="images/drinks/latte-art.png" shape="rect" radius="0" placeholder="Boissons"></image-slot>
+    </div>
+    <div class="menu-split-scrim"></div>
+    <span class="menu-split-frame" data-fr="Boissons" data-en="Drinks">Boissons</span>
+  </a>
+</section>
+
+<!-- ============ SPÉCIALITÉS ============ -->
+<section class="section cream" id="specialites">
+  <div class="wrap">
+    <div class="section-head center">
+      <span class="kicker center reveal" data-fr="La carte du chef" data-en="Chef's picks">La carte du chef</span>
+      <h2 class="section-title reveal" data-d="1" data-fr="Nos <em>spécialités</em>" data-en="Our <em>specialties</em>">Nos <em>spécialités</em></h2>
+      <p class="lead reveal" data-d="2" data-fr="Une cuisine européenne généreuse, préparée le matin même, idéale pour bien commencer la journée ou faire une pause gourmande au calme." data-en="Generous European-inspired cooking, prepared fresh each morning, ideal for starting your day or enjoying a quiet, satisfying break.">Une cuisine européenne généreuse, préparée le matin même, idéale pour bien commencer la journée ou faire une pause gourmande au calme.</p>
+    </div>
+    <div class="spec-grid">
+
+      <article class="spec-card reveal">
+        <div class="spec-media"><span class="spec-badge brick" data-fr="Signature" data-en="Signature">Signature</span>
+          <image-slot id="spec-norvegien" src="images/plats/petit-dejeuner-norvegien.jpg" shape="rect" placeholder="Petit-déjeuner norvégien"></image-slot></div>
+        <div class="spec-body"><div class="spec-row"><h3 data-fr="Petit-déjeuner norvégien" data-en="Norwegian breakfast">Petit-déjeuner norvégien</h3><span class="spec-price">20,95&nbsp;$</span></div>
+          <p class="spec-desc" data-fr="Œufs brouillés, saumon fumé norvégien, avocat, pain grillé, hollandaise et oignon croustillant." data-en="Scrambled eggs, Norwegian smoked salmon, avocado, toast, hollandaise and crispy onion.">Œufs brouillés, saumon fumé norvégien, avocat, pain grillé, hollandaise et oignon croustillant.</p></div>
+      </article>
+
+      <article class="spec-card reveal" data-d="1">
+        <div class="spec-media"><span class="spec-badge brick" data-fr="Signature" data-en="Signature">Signature</span>
+          <image-slot id="spec-shakshuka" src="images/plats/shakshuka.jpg" shape="rect" placeholder="Shakshuka"></image-slot></div>
+        <div class="spec-body"><div class="spec-row"><h3>Shakshuka</h3><span class="spec-price">17,95&nbsp;$</span></div>
+          <p class="spec-desc" data-fr="Tomates, poivrons, oignon et épices, deux œufs miroir, ciabatta grillée." data-en="Tomatoes, peppers, onion and spices, two sunny-side eggs, grilled ciabatta.">Tomates, poivrons, oignon et épices, deux œufs miroir, ciabatta grillée.</p></div>
+      </article>
+
+      <article class="spec-card reveal" data-d="2">
+        <div class="spec-media"><span class="spec-badge copper" data-fr="Nouveau" data-en="New">Nouveau</span>
+          <image-slot id="spec-avocat" src="images/plats/toast-avocat-saumon.jpg" shape="rect" placeholder="Toast à l'avocat & saumon"></image-slot></div>
+        <div class="spec-body"><div class="spec-row"><h3 data-fr="Toast à l'avocat &amp; saumon" data-en="Avocado &amp; salmon toast">Toast à l'avocat &amp; saumon</h3><span class="spec-price">18,95&nbsp;$</span></div>
+          <p class="spec-desc" data-fr="Pain 12 grains, purée d'avocat, saumon fumé, crème fromage, oignon mariné et câpres." data-en="12-grain bread, avocado mash, smoked salmon, cream cheese, pickled onion and capers.">Pain 12 grains, purée d'avocat, saumon fumé, crème fromage, oignon mariné et câpres.</p></div>
+      </article>
+
+      <article class="spec-card reveal">
+        <div class="spec-media"><span class="spec-badge" data-fr="Populaire" data-en="Popular">Populaire</span>
+          <image-slot id="spec-croissant" src="images/plats/croissant-oeuf-bacon.jpg" shape="rect" placeholder="Croissant œuf & bacon"></image-slot></div>
+        <div class="spec-body"><div class="spec-row"><h3 data-fr="Croissant œuf &amp; bacon" data-en="Croissant egg &amp; bacon">Croissant œuf &amp; bacon</h3><span class="spec-price">16,95&nbsp;$</span></div>
+          <p class="spec-desc" data-fr="Croissant au beurre, œuf miroir, bacon, oignon croustillant et sauce hollandaise." data-en="Butter croissant, sunny egg, bacon, crispy onion and hollandaise.">Croissant au beurre, œuf miroir, bacon, oignon croustillant et sauce hollandaise.</p></div>
+      </article>
+
+      <article class="spec-card reveal" data-d="1">
+        <div class="spec-media"><span class="spec-badge" data-fr="Populaire" data-en="Popular">Populaire</span>
+          <image-slot id="spec-rustique" src="images/plats/petit-dejeuner-rustique.jpg" shape="rect" placeholder="Petit-déjeuner rustique"></image-slot></div>
+        <div class="spec-body"><div class="spec-row"><h3 data-fr="Petit-déjeuner rustique" data-en="Rustic breakfast">Petit-déjeuner rustique</h3><span class="spec-price">20,95&nbsp;$</span></div>
+          <p class="spec-desc" data-fr="Œufs miroir, patates, saucisses grillées, champignons, sauce maison, oignon croustillant et pain grillé." data-en="Sunny-side eggs, potatoes, grilled sausages, mushrooms, house sauce, crispy onion and toast.">Œufs miroir, patates, saucisses grillées, champignons, sauce maison, oignon croustillant et pain grillé.</p></div>
+      </article>
+
+      <article class="spec-card reveal" data-d="2">
+        <div class="spec-media"><span class="spec-badge" data-fr="Populaire" data-en="Popular">Populaire</span>
+          <image-slot id="spec-croissant-jambon" src="images/plats/croissant-jambon-fromage.jpg" shape="rect" placeholder="Croissant jambon &amp; fromage"></image-slot></div>
+        <div class="spec-body"><div class="spec-row"><h3 data-fr="Croissant jambon &amp; fromage" data-en="Ham &amp; cheese croissant">Croissant jambon &amp; fromage</h3><span class="spec-price">14,95&nbsp;$</span></div>
+          <p class="spec-desc" data-fr="Croissant au beurre, fromage suisse, jambon Old Style, concombres, tomates, laitue et sauce maison." data-en="Butter croissant, Swiss cheese, Old Style ham, cucumbers, tomatoes, lettuce and house sauce.">Croissant au beurre, fromage suisse, jambon Old Style, concombres, tomates, laitue et sauce maison.</p></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ APERÇU DU MENU ============ -->
+<section class="section menuprev" id="menu">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker" data-fr="Petit-déj · Lunch · Café" data-en="Breakfast · Lunch · Coffee">Petit-déj · Lunch · Café</span>
+      <h2 class="section-title" data-fr="Un aperçu de <em>la carte</em>" data-en="A glimpse of <em>the menu</em>">Un aperçu de <em>la carte</em></h2>
+      <p class="lead" data-fr="Du matin au début d'après-midi : brunchs européens, sandwichs artisanaux, salades fraîches et café de spécialité, à déguster sur place, dans le calme." data-en="From morning into early afternoon: European brunches, artisanal sandwiches, fresh salads and specialty coffee, enjoyed on site, in peace and quiet.">Du matin au début d'après-midi : brunchs européens, sandwichs artisanaux, salades fraîches et café de spécialité, à déguster sur place, dans le calme.</p>
+    </div>
+
+    <div class="menu-cats">
+      <div class="menu-cat reveal"><span class="ci">01</span><div><h3 data-fr="Petit-déjeuners" data-en="Breakfasts">Petit-déjeuners</h3><ul>
+        <li><span data-fr="Petit-déjeuner rustique" data-en="Rustic breakfast">Petit-déjeuner rustique</span><span class="dot"></span><span class="pr">20,95&nbsp;$</span></li>
+        <li><span data-fr="Toast à l'avocat &amp; œuf" data-en="Avocado &amp; egg toast">Toast à l'avocat &amp; œuf</span><span class="dot"></span><span class="pr">17,95&nbsp;$</span></li>
+        <li><span data-fr="Sandwich Bon Matin" data-en="Good Morning sandwich">Sandwich Bon Matin</span><span class="dot"></span><span class="pr">15,95&nbsp;$</span></li>
+      </ul></div></div>
+
+      <div class="menu-cat reveal" data-d="1"><span class="ci">02</span><div><h3 data-fr="Pâtes Cafeterra" data-en="Cafeterra pasta">Pâtes Cafeterra</h3><ul>
+        <li><span data-fr="Crevettes crémeuses" data-en="Creamy shrimp">Crevettes crémeuses</span><span class="dot"></span><span class="pr">17,95&nbsp;$</span></li>
+        <li><span data-fr="À la bolognese" data-en="Bolognese">À la bolognese</span><span class="dot"></span><span class="pr">18,95&nbsp;$</span></li>
+        <li><span data-fr="Crémeuses aux champignons" data-en="Creamy mushroom">Crémeuses aux champignons</span><span class="dot"></span><span class="pr">15,95&nbsp;$</span></li>
+      </ul></div></div>
+
+      <div class="menu-cat reveal"><span class="ci">03</span><div><h3 data-fr="Sandwichs &amp; salades" data-en="Sandwiches &amp; salads">Sandwichs &amp; salades</h3><ul>
+        <li><span data-fr="Bagel saumon fumé" data-en="Smoked salmon bagel">Bagel saumon fumé</span><span class="dot"></span><span class="pr">16,95&nbsp;$</span></li>
+        <li><span data-fr="Salade saumon" data-en="Salmon salad">Salade saumon</span><span class="dot"></span><span class="pr">19,95&nbsp;$</span></li>
+        <li><span data-fr="Croissant jambon &amp; fromage" data-en="Ham &amp; cheese croissant">Croissant jambon &amp; fromage</span><span class="dot"></span><span class="pr">14,95&nbsp;$</span></li>
+      </ul></div></div>
+
+      <div class="menu-cat reveal" data-d="1"><span class="ci">04</span><div><h3 data-fr="Café &amp; boissons" data-en="Coffee &amp; drinks">Café &amp; boissons</h3><ul>
+        <li><span>Espresso</span><span class="dot"></span><span class="pr">3,50&nbsp;$</span></li>
+        <li><span data-fr="Latte" data-en="Latte">Latte</span><span class="dot"></span><span class="pr">4,50&nbsp;$</span></li>
+        <li><span>Affogato</span><span class="dot"></span><span class="pr">8,50&nbsp;$</span></li>
+      </ul></div></div>
+    </div>
+
+    <div class="more reveal"><a class="btn btn-solid" href="menu.html" data-fr="Voir le menu complet" data-en="See the full menu">Voir le menu complet</a></div>
+  </div>
+</section>
+
+<!-- ============ GALERIE ============ -->
+<section class="section paper" id="galerie">
+  <div class="wrap">
+    <div class="section-head center">
+      <span class="kicker center reveal" data-fr="Le lieu" data-en="The space">Le lieu</span>
+      <h2 class="section-title reveal" data-d="1" data-fr="La <em>galerie</em>" data-en="The <em>gallery</em>">La <em>galerie</em></h2>
+      <p class="lead reveal" data-d="2" data-fr="Briques apparentes, terrasse ensoleillée et lumière douce, un espace chaleureux et tranquille, en plein cœur du Vieux-Port." data-en="Exposed brick, a sunny terrace and soft light, a warm, tranquil space in the heart of Old Port.">Briques apparentes, terrasse ensoleillée et lumière douce, un espace chaleureux et tranquille, en plein cœur du Vieux-Port.</p>
+    </div>
+    <div class="gal-grid reveal" data-d="1">
+      <figure class="gal-cell gal-cell--lead">
+        <img src="images/venue/devanture.jpg" alt="Devanture de Cafeterra, café et pâtisseries au Vieux-Montréal">
+        <figcaption class="cap" data-fr="La devanture" data-en="The storefront">La devanture</figcaption>
+      </figure>
+      <figure class="gal-cell">
+        <img src="images/venue/terrasse.jpg" alt="Terrasse extérieure de Cafeterra">
+        <figcaption class="cap" data-fr="La terrasse" data-en="The terrace">La terrasse</figcaption>
+      </figure>
+      <figure class="gal-cell">
+        <img src="images/venue/mural-cafe.jpg" alt="Fresque de café sur brique blanche">
+        <figcaption class="cap" data-fr="La fresque « Coffee »" data-en="The “Coffee” mural">La fresque « Coffee »</figcaption>
+      </figure>
+      <figure class="gal-cell gal-cell--wide">
+        <img src="images/venue/fenetres-briques.jpg" alt="Fenêtres et briques, Vieux-Montréal">
+        <figcaption class="cap" data-fr="La lumière du Vieux-Port" data-en="Old Port light">La lumière du Vieux-Port</figcaption>
+      </figure>
+      <figure class="gal-cell">
+        <img src="images/venue/comptoir.jpg" alt="Comptoir de pâtisseries et lampes en rotin">
+        <figcaption class="cap" data-fr="Le comptoir à pâtisseries" data-en="The pastry counter">Le comptoir à pâtisseries</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AMBIANCE ============ -->
+<section class="ambiance" data-quotes='[{"fr":"Brunch superbe chez Cafeterra à Montréal. La shakshuka était honnêtement l&#39;une des meilleures que j&#39;aie jamais goûtées.","en_q":"Had such a great brunch at Cafeterra in Montreal. The shakshuka was honestly one of the best I&#39;ve had.","by":"Jeremy Borghi"},{"fr":"Sans conteste le meilleur brunch, et de très haute qualité, que j&#39;ai jamais mangé ! Un excellent rapport qualité-prix pour des ingrédients aussi frais.","en_q":"Hands down the best, highest-quality brunch I&#39;ve ever had! The brunch is a great deal for such fresh, high-quality ingredients.","by":"Eddie Chen"},{"fr":"Ils savent vraiment ce qu&#39;ils font ! Je recommande fortement. L&#39;endroit est magnifique et chaleureux. Le meilleur café-brunch du Vieux-Montréal, sans aucun doute.","en_q":"They definitely know what they are doing! Highly recommend. Also the space itself is beautiful and cozy. The best coffee shop and brunch spot in old Montreal for sure.","by":"Carpinus Carpinus"}]'>
+  <div class="bg" data-parallax="0.18"><img src="assets/lounge-web.jpg" alt="Salon de Cafeterra, fauteuils et fougères"></div>
+  <div class="wrap">
+    <span class="quote-mark">&ldquo;</span>
+    <div class="quote-stage">
+      <div class="quote-slide">
+        <blockquote></blockquote>
+        <div class="by"></div>
+      </div>
+    </div>
+    <div class="quote-dots"></div>
+  </div>
+</section>
+
+<!-- ============ INFOS PRATIQUES ============ -->
+<section class="section cream" id="visiter">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker" data-fr="Nous visiter" data-en="Visit us">Nous visiter</span>
+      <h2 class="section-title" data-fr="Passez nous <em>voir</em>" data-en="Come <em>say hello</em>">Passez nous <em>voir</em></h2>
+      <p class="lead" data-fr="Démarrez la journée ou faites une pause, sans ordinateur, au milieu du Vieux-Port." data-en="Start your morning or take a break, no laptops, right in the heart of Old Port.">Démarrez la journée ou faites une pause, sans ordinateur, au milieu du Vieux-Port.</p>
+    </div>
+    <div class="info-grid">
+      <div class="reveal">
+        <div class="contact-line"><div class="ic">◷</div><div><div class="k" data-fr="Adresse" data-en="Address">Adresse</div><div class="vv">243 Rue Notre-Dame Ouest<br>Montréal, QC&nbsp;H2Y 1T4</div></div></div>
+        <div class="contact-line"><div class="ic">☏</div><div><div class="k" data-fr="Téléphone" data-en="Phone">Téléphone</div><div class="vv"><a href="tel:+14383808311">(438) 380-8311</a></div></div></div>
+        <table class="hours">
+          <tr data-day="1"><td data-fr="Lundi" data-en="Monday">Lundi</td><td>8h00 – 16h00</td></tr>
+          <tr data-day="2"><td data-fr="Mardi" data-en="Tuesday">Mardi</td><td>8h00 – 16h00</td></tr>
+          <tr data-day="3"><td data-fr="Mercredi" data-en="Wednesday">Mercredi</td><td>8h00 – 16h00</td></tr>
+          <tr data-day="4"><td data-fr="Jeudi" data-en="Thursday">Jeudi</td><td>8h00 – 16h00</td></tr>
+          <tr data-day="5"><td data-fr="Vendredi" data-en="Friday">Vendredi</td><td>8h00 – 16h00</td></tr>
+          <tr data-day="6"><td data-fr="Samedi" data-en="Saturday">Samedi</td><td>8h00 – 16h00</td></tr>
+          <tr data-day="0"><td data-fr="Dimanche" data-en="Sunday">Dimanche</td><td>8h00 – 16h00</td></tr>
+        </table>
+        <div class="info-actions">
+          <a class="btn btn-dark" href="https://www.google.com/maps/dir/?api=1&destination=243+Rue+Notre-Dame+Ouest+Montreal+QC+H2Y+1T4" target="_blank" rel="noopener" data-fr="Itinéraire" data-en="Directions">Itinéraire</a>
+          <a class="btn btn-outline-ink" href="tel:+14383808311" data-fr="Appeler" data-en="Call">Appeler</a>
+        </div>
+      </div>
+      <div class="map-frame reveal" data-d="1">
+        <iframe title="Carte Cafeterra" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=243%20Rue%20Notre-Dame%20Ouest,%20Montreal,%20QC%20H2Y%201T4&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <p data-fr="Le charme parisien au cœur du Vieux-Montréal. Café de spécialité, brunch gourmand et pâtisseries artisanales." data-en="Parisian charm in the heart of Old Montreal. Specialty coffee, hearty brunch and artisanal pastries.">Le charme parisien au cœur du Vieux-Montréal. Café de spécialité, brunch gourmand et pâtisseries artisanales.</p>
+        <nav class="socials" aria-label="Réseaux sociaux">
+          <a href="#" data-social="instagram" aria-label="Instagram">
+            <img src="images/social/instagram.svg" alt="" width="20" height="20" decoding="async">
+          </a>
+        </nav>
+      </div>
+      <div class="footer-col">
+        <h4 data-fr="Visiter" data-en="Visit">Visiter</h4>
+        <ul>
+          <li>243 Rue Notre-Dame O.</li>
+          <li>Montréal, QC H2Y 1T4</li>
+          <li><a href="tel:+14383808311">(438) 380-8311</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-fr="Heures" data-en="Hours">Heures</h4>
+        <ul>
+          <li data-fr="Tous les jours · 8h – 16h" data-en="Every day · 8am – 4pm">Tous les jours · 8h – 16h</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-mark">
+      <a class="footer-logo" href="index.html" aria-label="Cafeterra, Café &amp; Pâtisseries">
+        <img src="images/logo/cafeterra-logo-white-dnu.png" alt="" width="120" height="120" decoding="async">
+      </a>
+    </div>
+    <div class="footer-bot">
+      <span>© <span id="yr"></span> Cafeterra. <span data-fr="Tous droits réservés." data-en="All rights reserved.">Tous droits réservés.</span></span>
+      <span data-fr="Fait avec soin dans le Vieux-Montréal." data-en="Made with care in Old Montreal.">Fait avec soin dans le Vieux-Montréal.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ SCRIPTS ============ -->
+<script src="image-slot.js"></script>
+<script src="site.js"></script>
+<script>
+  // current year + highlight today's hours row
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  (function(){var d=new Date().getDay();var row=document.querySelector('.hours tr[data-day="'+d+'"]');if(row)row.classList.add('today');})();
+</script>
+
+<!-- ============ AUTO-PRINT ============ -->
+<script>
+  (function(){
+    function go(){ setTimeout(function(){ window.print(); }, 600); }
+    function ready(){
+      if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(function(){ setTimeout(go, 150); });
+      } else { go(); }
+    }
+    if (document.readyState === 'complete') ready();
+    else window.addEventListener('load', ready);
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cafeterra, La carte / The Menu</title>
+<meta name="description" content="La carte complète de Cafeterra : brunch, lunch, café de spécialité et boissons froides. Vieux-Montréal.">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="images/logo/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="images/logo/favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/logo/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" aria-label="Navigation principale">
+  <div class="nav-bar">
+    <button class="nav-burger" type="button" aria-label="Menu"><span></span><span></span><span></span></button>
+
+    <div class="nav-cluster nav-cluster--left">
+      <div class="lang" role="group" aria-label="Langue / Language">
+        <button type="button" data-lang="fr" class="on">FR</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html#apropos" data-fr="À propos" data-en="About">À propos</a></li>
+        <li><a href="index.html#specialites" data-fr="Spécialités" data-en="Specialties">Spécialités</a></li>
+        <li><a href="menu.html" data-fr="Menu" data-en="Menu">Menu</a></li>
+        <li><a href="index.html#galerie" data-fr="Galerie" data-en="Gallery">Galerie</a></li>
+        <li><a href="index.html#visiter" data-fr="Nous visiter" data-en="Visit">Nous visiter</a></li>
+      </ul>
+    </div>
+
+  </div>
+  <div class="nav-end">
+    <a class="nav-cta" href="index.html" data-fr="Accueil" data-en="Home">Accueil</a>
+    <a class="nav-logo" href="index.html" aria-label="Cafeterra, Café &amp; Pâtisseries">
+      <img src="images/logo/cafeterra-logo-white-dnu.png" alt="" width="102" height="102" decoding="async">
+    </a>
+  </div>
+</nav>
+<div class="drawer" aria-hidden="true">
+  <button class="close" type="button" aria-label="Fermer">&times;</button>
+  <div class="drawer-lang lang" role="group" aria-label="Langue / Language">
+    <button type="button" data-lang="fr" class="on">FR</button>
+    <button type="button" data-lang="en">EN</button>
+  </div>
+  <a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a>
+  <a href="#brunch" data-fr="Brunch" data-en="Brunch">Brunch</a>
+  <a href="#lunch" data-fr="Lunch" data-en="Lunch">Lunch</a>
+  <a href="#cafe" data-fr="Café" data-en="Coffee">Café</a>
+  <a href="#froid" data-fr="Boissons froides" data-en="Cold drinks">Boissons froides</a>
+</div>
+
+<!-- ============ MASTHEAD ============ -->
+<header class="menu-masthead">
+  <div class="bg" data-parallax="0.12"><img src="assets/pastries-web.jpg" alt="Comptoir de pâtisseries de Cafeterra"></div>
+  <div class="wrap">
+    <span class="kicker" data-fr="Servi de 8h à 16h" data-en="Served 8am – 4pm">Servi de 8h à 16h</span>
+    <h1 data-fr="La <em>carte</em>" data-en="The <em>menu</em>">La <em>carte</em></h1>
+  </div>
+</header>
+
+<!-- ============ CATEGORY NAV ============ -->
+<div class="cat-nav">
+  <div class="row">
+    <a href="#brunch" class="active" data-fr="Brunch" data-en="Brunch">Brunch</a>
+    <a href="#lunch" data-fr="Lunch" data-en="Lunch">Lunch</a>
+    <a href="#cafe" data-fr="Café" data-en="Coffee">Café</a>
+    <a href="#froid" data-fr="Boissons froides" data-en="Cold drinks">Boissons froides</a>
+  </div>
+</div>
+<p class="menu-photo-hint wrap" data-fr="Pour voir la photo d'un plat, cliquez sur son nom. Toutes les photos ne sont pas affichées ici afin de garder la carte lisible." data-en="Click on a dish name to see its photo. Not all photos are shown here to keep the menu easy to read.">Pour voir la photo d'un plat, cliquez sur son nom. Toutes les photos ne sont pas affichées ici afin de garder la carte lisible.</p>
+
+<!-- ============ BRUNCH ============ -->
+<section class="menu-section" id="brunch">
+  <div class="wrap">
+    <div class="menu-section-head reveal">
+      <h2 data-fr="Brunch &amp; <em>petit-déjeuner</em>" data-en="Brunch &amp; <em>breakfast</em>">Brunch &amp; <em>petit-déjeuner</em></h2>
+      <div class="legend"><span data-fr="Patates ou fruits +3,95&nbsp;$" data-en="Potatoes or fruit +$3.95">Patates ou fruits +3,95&nbsp;$</span></div>
+    </div>
+
+    <div class="menu-sub" data-fr="Les classiques" data-en="The classics">Les classiques</div>
+    <div class="mi-list">
+      <div class="mi reveal mi--has-photo" data-photo="images/plats/petit-dejeuner-norvegien.jpg" data-photo-alt="Petit-déjeuner norvégien, Cafeterra" role="button" tabindex="0"><div class="mi-head"><h4 data-fr="Petit-déjeuner norvégien" data-en="Norwegian breakfast">Petit-déjeuner norvégien</h4><span class="mi-tag sig" data-fr="Signature" data-en="Signature">Signature</span><span class="mi-lead"></span><span class="mi-price">20,95&nbsp;$</span></div>
+        <p class="mi-desc" data-fr="Omelette brouillée (2 œufs), saumon fumé norvégien, avocat, pain grillé, sauce hollandaise, oignon croustillant, mélange de salade." data-en="Scrambled omelette (2 eggs), Norwegian smoked salmon, avocado, toast, hollandaise, crispy onion, salad mix.">Omelette brouillée (2 œufs), saumon fumé norvégien, avocat, pain grillé, sauce hollandaise, oignon croustillant, mélange de salade.</p></div>
+
+      <div class="mi reveal"><div class="mi-head"><h4 data-fr="Petit-déjeuner ukrainien" data-en="Ukrainian breakfast">Petit-déjeuner ukrainien</h4><span class="mi-lead"></span><span class="mi-price">20,95&nbsp;$</span></div>
+        <p class="mi-desc" data-fr="2 œufs miroir, bacon, saucisses fumées sans gluten, pain grillé, sauce hollandaise, oignon croustillant, mélange de salade." data-en="2 sunny-side eggs, bacon, gluten-free smoked sausages, toast, hollandaise, crispy onion, salad mix.">2 œufs miroir, bacon, saucisses fumées sans gluten, pain grillé, sauce hollandaise, oignon croustillant, mélange de salade.</p></div>
+
+      <div class="mi reveal mi--has-photo" data-photo="images/plats/petit-dejeuner-rustique.jpg" data-photo-alt="Petit-déjeuner rustique, Cafeterra" role="button" tabindex="0"><div class="mi-head"><h4 data-fr="Petit-déjeuner rustique" data-en="Rustic breakfast">Petit-déjeuner rustique</h4><span class="mi-tag pop" data-fr="Populaire" data-en="Popular">Populaire</span><span class="mi-lead"></span><span class="mi-price">20,95&nbsp;$</span></div>
+        <p class="mi-desc" data-fr="2 œufs miroir, patates, saucisses grillées sans gluten, champignons, sauce maison, oignon croustillant, persil italien, pain grillé." data-en="2 sunny-side eggs, potatoes, grilled gluten-free sausages, mushrooms, house sauce, crispy onion, Italian parsley, toast.">2 œufs miroir, patates, saucisses grillées sans gluten, champignons, sauce maison, oignon croustillant, persil italien, pain grillé.</p></div>
+
+      <div class="mi reveal mi--has-photo" data-photo="images/plats/shakshuka.jpg" data-photo-alt="Shakshuka, Cafeterra" role="button" tabindex="0"><div class="mi-head"><h4>Shakshuka</h4><span class="mi-tag sig" data-fr="Signature" data-en="Signature">Signature</span><span class="mi-lead"></span><span class="mi-price">17,95&nbsp;$</span></div>
+        <p class="mi-desc" data-fr="Tomates, poivrons, oignon, ail, huile d'olive, cumin, paprika, persil, 2 œufs miroir, ciabatta grillée." data-en="Tomatoes, peppers, onion, garlic, olive oil, cumin, paprika, parsley, 2 sunny-side eggs, grilled ciabatta.">Tomates, poivrons, oignon, ail, huile d'olive, cumin, paprika, persil, 2 œufs miroir, ciabatta grillée.</p></div>
+
+      <div class="mi reveal"><div class="mi-head"><h4 data-fr="Bagel jambon &amp; fromage" data-en="Ham &amp; cheese bagel">Bagel jambon &amp; fromage</h4><span class="mi-lead"></span><span class="mi-price">15,95&nbsp;$</span></div>
+        <p class="mi-desc" data-fr="Bagel sésame style Montréal, jambon Old Style, fromage suisse, concombres, tomate, sauce maison, mélange de salade." data-en="Montreal-style sesame bagel, Old Style ham, Swiss cheese, cucumbers, tomato, house sauce, salad mix.">Bagel sésame style Montréal, jambon Old Style, fromage suisse, concombres, tomate, sauce maison, mélange de salade.</p></div>
+
+      <div class="mi reveal mi--has-photo" data-photo="images/plats/croissant-oeuf-bacon.jpg" data-photo-alt="Croissant œuf et bacon, Cafeterra" role="button" tabindex="0"><div class="mi-head"><h4 data-fr="Croissant œuf &amp; bacon" data-en="Egg &amp; bacon croissant">Croissant œuf &amp; bacon</h4><span class="mi-tag pop" data-fr="Populaire" data-en="Popular">Populaire</span><span class="mi-lead"></span><span class="mi-price">16,95&nbsp;$</span></div>
+        <p class="mi-desc" data-fr="Croissant au beurre, œuf miroir, bacon, oignon croustillant, sauce hollandaise, mélange de salade." data-en="Butter croissant, sunny-side egg, bacon, crispy onion, hollandaise, salad mix.">Croissant au beurre, œuf miroir, bacon, oignon croustillant, sauce hollandaise, mélange de salade.</p></div>
+    </div>
+
+    <div class="menu-sub" data-fr="Bon matin &amp; toasts à l'avocat" data-en="Good morning &amp; avocado toasts">Bon matin &amp; toasts à l'avocat</div>
+    <div class="mi-list">
+      <div class="mi reveal"><div class="mi-head"><h4 data-fr="Sandwich Bon Matin" data-en="Good Morning sandwich">Sandwich Bon Matin</h4><span class="mi-lead"></span><span class="mi-price">15,95&nbsp;$</span></div>
+        <p class="mi-desc" data-fr="Pain 12 grains, œuf brouillé, laitue, jambon Old Style, fromage suisse, sauce maison, concombres, tomate, mélange de salade." data-en="12-grain bread, scrambled egg, lettuce, Old Style ham, Swiss cheese, house sauce, cucumbers, tomato, salad mix.">Pain 12 grains, œuf brouillé, laitue, jambon Old Style, fromage suisse, sauce maison, concombres, tomate, mélange de salade.</p></div>
+
+      <div class="mi reveal mi--has-photo" data-photo="images/plats/toast-avocat-oeuf.jpg" data-photo-alt="Toast à l'avocat et œuf, Cafeterra" role="button" tabindex="0"><div class="mi-head"><h4 data-fr="Toast à l'avocat &amp; œuf" data-en="Avocado &amp; egg toast">Toast à l'avocat &amp; œuf</h4><span class="mi-tag pop" data-fr="Populaire" data-en="Popular">Populaire</span><span class="mi-lead"></span><span class="mi-price">17,95&nbsp;$</span></div>
+        <p class="mi-desc" data-fr="Pain 12 grains, avocat écrasé, œuf miroir, oignons croquants, sauce hollandaise, mélange de salade." data-en="12-grain bread, mashed avocado, sunny-side egg, crunchy onions, hollandaise, salad mix.">Pain 12 grains, avocat écrasé, œuf miroir, oignons croquants, sauce hollandaise, mélange de salade.</p></div>
+
+      <div class="mi reveal mi--has-photo" data-photo="images/plats/toast-avocat-vegetarien.jpg" data-photo-alt="Toast à l'avocat végétarien, Cafeterra" role="button" tabindex="0"><div class="mi-head"><h4 data-fr="Toast à l'avocat végétarien" data-en="Vegetarian avocado toast">Toast à l'avocat végétarien</h4><span class="mi-lead"></span><span class="mi-price">15,95&nbsp;$</span></div>
+        <p class="mi-desc" data-fr="Pain 12 grains, purée d'avocat, tomates cerises, mini bocconcini, tomates séchées, olives, sauce balsamique, salade." data-en="12-grain bread, avocado purée, cherry tomatoes, mini bocconcini, sun-dried tomatoes, olives, balsamic, salad.">Pain 12 grains, purée d'avocat, tomates cerises, mini bocconcini, tomates séchées, olives, sauce balsamique, salade.</p></div>
+
+      <div class="mi reveal mi--has-photo" data-photo="images/plats/toast-avocat-saumon.jpg" data-photo-alt="Toast à l'avocat et saumon fumé, Cafeterra" role="button" tabindex="0"><div class="mi-head"><h4 data-fr="Toast à l'avocat &amp; saumon" data-en="Avocado &amp; salmon toast">Toast à l'avocat &amp; saumon</h4><span class="mi-tag new" data-fr="Nouveau" data-en="New">Nouveau</span><span class="mi-lead"></span><span class="mi-price">18,95&nbsp;$</span></div>
+        <p class="mi-desc" data-fr="Pain 12 grains, purée d'avocat, saumon fumé norvégien, crème fromage, oignon rouge mariné, concombres, câpres, sésame grillé, salade." data-en="12-grain bread, avocado purée, Norwegian smoked salmon, cream cheese, pickled red onion, cucumbers, capers, toasted sesame, salad.">Pain 12 grains, purée d'avocat, saumon fumé norvégien, crème fromage, oignon rouge mariné, concombres, câpres, sésame grillé, salade.</p></div>
+    </div>
+
+    <div class="menu-sub" data-fr="Desserts" data-en="Desserts">Desserts</div>
+    <div class="mi-list">
+      <div class="mi reveal"><div class="mi-head"><h4 data-fr="Gaufres belges aux fruits" data-en="Belgian fruit waffles">Gaufres belges aux fruits</h4><span class="mi-tag pop" data-fr="Populaire" data-en="Popular">Populaire</span><span class="mi-lead"></span><span class="mi-price">12,95&nbsp;$</span></div>
+        <p class="mi-desc" data-fr="2 gaufres belges, sirop d'érable, fruits et crème fouettée." data-en="2 Belgian waffles, maple syrup, fruit and whipped cream.">2 gaufres belges, sirop d'érable, fruits et crème fouettée.</p></div>
+
+      <div class="mi reveal"><div class="mi-head"><h4 data-fr="Salade de fruits" data-en="Fruit salad">Salade de fruits</h4><span class="mi-lead"></span><span class="mi-price">8,95&nbsp;$</span></div>
+        <p class="mi-desc" data-fr="Mélange de fruits avec sauce miel-orange." data-en="Mixed fruit with honey-orange sauce.">Mélange de fruits avec sauce miel-orange.</p></div>
+    </div>
+
+    <div class="extras-bar reveal">
+      <span class="et" data-fr="Extras" data-en="Extras">Extras</span>
+      <span class="ex"><b>œuf</b> 3,00&nbsp;$</span><span class="ex"><b data-fr="patates" data-en="potatoes">patates</b> 3,95&nbsp;$</span><span class="ex"><b>bacon</b> 4,00&nbsp;$</span><span class="ex"><b data-fr="poulet grillé" data-en="grilled chicken">poulet grillé</b> 5,00&nbsp;$</span><span class="ex"><b data-fr="fromage" data-en="cheese">fromage</b> 2,00&nbsp;$</span><span class="ex"><b>avocat</b> 5,00&nbsp;$</span><span class="ex"><b data-fr="saumon" data-en="salmon">saumon</b> 7,00&nbsp;$</span><span class="ex"><b data-fr="fruits" data-en="fruit">fruits</b> 3,95&nbsp;$</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LUNCH ============ -->
+<section class="menu-section" id="lunch">
+  <div class="wrap">
+    <div class="menu-section-head reveal">
+      <h2 data-fr="<em>Lunch</em>" data-en="<em>Lunch</em>"><em>Lunch</em></h2>
+      <div class="legend"><span data-fr="Parmesan +1,00&nbsp;$" data-en="Parmesan +$1.00">Parmesan +1,00&nbsp;$</span></div>
+    </div>
+
+    <div class="menu-sub" data-fr="Soupe" data-en="Soup">Soupe</div>
+    <div class="mi-list">
+      <div class="mi reveal"><div class="mi-head"><h4 data-fr="Crème de champignons" data-en="Cream of mushroom">Crème de champignons</h4><span class="mi-lead"></span><span class="mi-price">6,95 / 10,95&nbsp;$</span></div>
+        <p class="mi-desc" data-fr="Petite / Grande." data-en="Small / Large.">Petite / Grande.</p></div>
+    </div>
+
+    <div class="menu-sub" data-fr="Pâtes Cafeterra" data-en="Cafeterra pasta">Pâtes Cafeterra</div>
+    <div class="mi-list">
+      <div class="mi reveal"><div class="mi-head"><h4 data-fr="Crémeuses aux champignons" data-en="Creamy mushroom">Crémeuses aux champignons</h4><span class="mi-lead"></span><span class="mi-price">15,95&nbsp;$</span></div>
+        <p class="mi-desc" data-fr="Spaghetti, champignons, crème épaisse, parmesan." data-en="Spaghetti, mushrooms, heavy cream, parmesan.">Spaghetti, champignons, crème épaisse, parmesan.</p></div>
+
+      <div class="mi reveal"><div class="mi-head"><h4 data-fr="Crevettes crémeuses" data-en="Creamy shrimp">Crevettes crémeuses</h4><span class="mi-lead"></span><span class="mi-price">17,95&nbsp;$</span></div>
+        <p class="mi-desc" data-fr="Spaghetti, crevettes nordiques, ail, beurre, crème épaisse, parmesan." data-en="Spaghetti, nordic shrimp, garlic, butter, heavy cream, parmesan.">Spaghetti, crevettes nordiques, ail, beurre, crème épaisse, parmesan.</p></div>
+
+      <div class="mi reveal"><div class="mi-head"><h4 data-fr="Poulet pesto" data-en="Pesto chicken">Poulet pesto</h4><span class="mi-tag sig" data-fr="Signature" data-en="Signature">Signature</span><span class="mi-lead"></span><span class="mi-price">18,95&nbsp;$</span></div>
+        <p class="mi-desc" data-fr="Penne rigate, cuisse de poulet, pesto basilic, crème épaisse, parmesan." data-en="Penne rigate, chicken thigh, basil pesto, heavy cream, parmesan.">Penne rigate, cuisse de poulet, pesto basilic, crème épaisse, parmesan.</p></div>
+
+      <div class="mi reveal"><div class="mi-head"><h4 data-fr="À la bolognese" data-en="Bolognese">À la bolognese</h4><span class="mi-lead"></span><span class="mi-price">18,95&nbsp;$</span></div>
+        <p class="mi-desc" data-fr="Spaghetti, veau haché maigre, légumes, tomates, sauce tomate basilic, parmesan." data-en="Spaghetti, lean ground veal, vegetables, tomatoes, basil tomato sauce, parmesan.">Spaghetti, veau haché maigre, légumes, tomates, sauce tomate basilic, parmesan.</p></div>
+    </div>
+
+    <div class="menu-sub" data-fr="Salades" data-en="Salads">Salades</div>
+    <div class="mi-list">
+      <div class="mi reveal"><div class="mi-head"><h4 data-fr="Salade du jardin" data-en="Garden salad">Salade du jardin</h4><span class="mi-lead"></span><span class="mi-price">6,95&nbsp;$</span></div>
+        <p class="mi-desc" data-fr="Salade mix, tomates cerises, concombres, poivron doux, sauce miel-moutarde maison, croûtons maison." data-en="Mixed greens, cherry tomatoes, cucumbers, sweet pepper, house honey-mustard, house croutons.">Salade mix, tomates cerises, concombres, poivron doux, sauce miel-moutarde maison, croûtons maison.</p></div>
+
+      <div class="mi reveal"><div class="mi-head"><h4 data-fr="Salade au saumon" data-en="Salmon salad">Salade au saumon</h4><span class="mi-lead"></span><span class="mi-price">19,95&nbsp;$</span></div>
+        <p class="mi-desc" data-fr="Saumon demi-sel, tomates cerises, concombres, avocat, feta, salade mix, sésame grillé, sauce miel maison." data-en="Lightly salted salmon, cherry tomatoes, cucumbers, avocado, feta, mixed greens, toasted sesame, house honey sauce.">Saumon demi-sel, tomates cerises, concombres, avocat, feta, salade mix, sésame grillé, sauce miel maison.</p></div>
+
+      <div class="mi reveal"><div class="mi-head"><h4 data-fr="Salade aux crevettes" data-en="Shrimp salad">Salade aux crevettes</h4><span class="mi-lead"></span><span class="mi-price">16,95&nbsp;$</span></div>
+        <p class="mi-desc" data-fr="Crevettes cuites, tomates cerises, concombres, avocat, salade mix, sésame grillé, sauce miel-moutarde maison." data-en="Cooked shrimp, cherry tomatoes, cucumbers, avocado, mixed greens, toasted sesame, house honey-mustard.">Crevettes cuites, tomates cerises, concombres, avocat, salade mix, sésame grillé, sauce miel-moutarde maison.</p></div>
+
+      <div class="mi reveal"><div class="mi-head"><h4 data-fr="Poulet grillé &amp; parmesan" data-en="Grilled chicken &amp; parmesan">Poulet grillé &amp; parmesan</h4><span class="mi-lead"></span><span class="mi-price">18,95&nbsp;$</span></div>
+        <p class="mi-desc" data-fr="Poulet grillé, tomates cerises, concombres, avocat, poivron doux, œufs, salade mix, parmesan, sauce miel maison." data-en="Grilled chicken, cherry tomatoes, cucumbers, avocado, sweet pepper, eggs, mixed greens, parmesan, house honey sauce.">Poulet grillé, tomates cerises, concombres, avocat, poivron doux, œufs, salade mix, parmesan, sauce miel maison.</p></div>
+    </div>
+
+    <div class="menu-sub" data-fr="Sandwiches" data-en="Sandwiches">Sandwiches</div>
+    <div class="mi-list">
+      <div class="mi reveal mi--has-photo" data-photo="images/plats/croissant-jambon-fromage.jpg" data-photo-alt="Croissant jambon et fromage, Cafeterra" role="button" tabindex="0"><div class="mi-head"><h4 data-fr="Croissant jambon &amp; fromage" data-en="Ham &amp; cheese croissant">Croissant jambon &amp; fromage</h4><span class="mi-tag pop" data-fr="Populaire" data-en="Popular">Populaire</span><span class="mi-lead"></span><span class="mi-price">14,95&nbsp;$</span></div>
+        <p class="mi-desc" data-fr="Croissant au beurre, fromage suisse, jambon Old Style, concombres, tomates, laitue, sauce maison, avec salade." data-en="Butter croissant, Swiss cheese, Old Style ham, cucumbers, tomatoes, lettuce, house sauce, with salad.">Croissant au beurre, fromage suisse, jambon Old Style, concombres, tomates, laitue, sauce maison, avec salade.</p></div>
+
+      <div class="mi reveal mi--has-photo" data-photo="images/plats/bagel-saumon-fume.jpg" data-photo-alt="Bagel saumon fumé, Cafeterra" role="button" tabindex="0"><div class="mi-head"><h4 data-fr="Bagel saumon fumé" data-en="Smoked salmon bagel">Bagel saumon fumé</h4><span class="mi-tag sig" data-fr="Signature" data-en="Signature">Signature</span><span class="mi-lead"></span><span class="mi-price">16,95&nbsp;$</span></div>
+        <p class="mi-desc" data-fr="Bagel sésame, crème fromage, saumon fumé norvégien, cornichons, oignon rouge mariné, câpres, sésame grillé, avec salade." data-en="Sesame bagel, cream cheese, Norwegian smoked salmon, pickles, pickled red onion, capers, toasted sesame, with salad.">Bagel sésame, crème fromage, saumon fumé norvégien, cornichons, oignon rouge mariné, câpres, sésame grillé, avec salade.</p></div>
+
+      <div class="mi reveal mi--has-photo" data-photo="images/plats/croissant-saumon-fume.jpg" data-photo-alt="Croissant au saumon fumé, Cafeterra" role="button" tabindex="0"><div class="mi-head"><h4 data-fr="Croissant saumon fumé" data-en="Smoked salmon croissant">Croissant saumon fumé</h4><span class="mi-lead"></span><span class="mi-price">16,95&nbsp;$</span></div>
+        <p class="mi-desc" data-fr="Croissant au beurre, crème fromage, saumon fumé norvégien, cornichons, oignon rouge mariné, câpres, sésame grillé, avec salade." data-en="Butter croissant, cream cheese, Norwegian smoked salmon, pickles, pickled red onion, capers, toasted sesame, with salad.">Croissant au beurre, crème fromage, saumon fumé norvégien, cornichons, oignon rouge mariné, câpres, sésame grillé, avec salade.</p></div>
+
+      <div class="mi reveal"><div class="mi-head"><h4 data-fr="Poulet grillé" data-en="Grilled chicken">Poulet grillé</h4><span class="mi-lead"></span><span class="mi-price">15,95&nbsp;$</span></div>
+        <p class="mi-desc" data-fr="Poulet grillé, fromage suisse, tomates, concombres, laitue, pain artisanal, sauce maison, avec salade." data-en="Grilled chicken, Swiss cheese, tomatoes, cucumbers, lettuce, artisanal bread, house sauce, with salad.">Poulet grillé, fromage suisse, tomates, concombres, laitue, pain artisanal, sauce maison, avec salade.</p></div>
+
+      <div class="mi reveal mi--has-photo" data-photo="images/plats/roti-de-boeuf.jpg" data-photo-alt="Sandwich rôti de bœuf, Cafeterra" role="button" tabindex="0"><div class="mi-head"><h4 data-fr="Rôti de bœuf" data-en="Roast beef">Rôti de bœuf</h4><span class="mi-lead"></span><span class="mi-price">16,95&nbsp;$</span></div>
+        <p class="mi-desc" data-fr="Rôti de bœuf, fromage suisse, avocat, tomate, oignon rouge mariné, laitue, pain artisanal, sauce BBQ, avec salade." data-en="Roast beef, Swiss cheese, avocado, tomato, pickled red onion, lettuce, artisanal bread, BBQ sauce, with salad.">Rôti de bœuf, fromage suisse, avocat, tomate, oignon rouge mariné, laitue, pain artisanal, sauce BBQ, avec salade.</p></div>
+
+      <div class="mi reveal"><div class="mi-head"><h4 data-fr="Végétarien" data-en="Vegetarian">Végétarien</h4><span class="mi-lead"></span><span class="mi-price">14,95&nbsp;$</span></div>
+        <p class="mi-desc" data-fr="Avocat, feta, tomate, concombres, poivron doux, pain artisanal, pesto basilic, avec salade." data-en="Avocado, feta, tomato, cucumbers, sweet pepper, artisanal bread, basil pesto, with salad.">Avocat, feta, tomate, concombres, poivron doux, pain artisanal, pesto basilic, avec salade.</p></div>
+    </div>
+
+    <div class="extras-bar reveal">
+      <span class="et" data-fr="Extras" data-en="Extras">Extras</span>
+      <span class="ex"><b data-fr="patates à la friteuse à air" data-en="air-fryer potatoes">patates à la friteuse à air</b> 3,95&nbsp;$</span><span class="ex"><b data-fr="mélange de fruits" data-en="fruit mix">mélange de fruits</b> 3,95&nbsp;$</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CAFÉ ============ -->
+<section class="menu-section" id="cafe">
+  <div class="wrap">
+    <div class="menu-section-head reveal">
+      <h2 data-fr="Café &amp; <em>boissons chaudes</em>" data-en="Coffee &amp; <em>hot drinks</em>">Café &amp; <em>boissons chaudes</em></h2>
+      <div class="legend"><span data-fr="Petit · Moyen · Grand" data-en="Small · Medium · Large">Petit · Moyen · Grand</span></div>
+    </div>
+
+    <div class="menu-sub" data-fr="Espresso &amp; classiques" data-en="Espresso &amp; classics">Espresso &amp; classiques</div>
+    <div class="mi-list">
+      <div class="mi reveal"><div class="mi-head"><h4>Latte</h4><span class="mi-tag pop" data-fr="Populaire" data-en="Popular">Populaire</span><span class="mi-lead"></span><span class="mi-price">4,50 · 5,00 · 5,50&nbsp;$</span></div></div>
+      <div class="mi reveal"><div class="mi-head"><h4>Cappuccino</h4><span class="mi-lead"></span><span class="mi-price">4,50 · 5,00 · 5,50&nbsp;$</span></div></div>
+      <div class="mi reveal"><div class="mi-head"><h4>Mochaccino</h4><span class="mi-lead"></span><span class="mi-price">5,00 · 5,50 · 6,00&nbsp;$</span></div></div>
+      <div class="mi reveal"><div class="mi-head"><h4 data-fr="Café filtre" data-en="Filter coffee">Café filtre</h4><span class="mi-lead"></span><span class="mi-price">3,00 · 3,50 · 4,50&nbsp;$</span></div></div>
+      <div class="mi reveal"><div class="mi-head"><h4>Americano</h4><span class="mi-lead"></span><span class="mi-price">3,75 · 5,00&nbsp;$</span></div></div>
+      <div class="mi reveal"><div class="mi-head"><h4>Espresso</h4><span class="mi-tag sig" data-fr="Signature" data-en="Signature">Signature</span><span class="mi-lead"></span><span class="mi-price">3,50 · 5,00&nbsp;$</span></div>
+        <p class="mi-desc" data-fr="Simple ou double." data-en="Single or double.">Simple ou double.</p></div>
+      <div class="mi reveal"><div class="mi-head"><h4>Macchiato</h4><span class="mi-lead"></span><span class="mi-price">4,00 · 5,50&nbsp;$</span></div></div>
+      <div class="mi reveal"><div class="mi-head"><h4>Cortado</h4><span class="mi-lead"></span><span class="mi-price">4,50 · 6,00&nbsp;$</span></div></div>
+      <div class="mi reveal"><div class="mi-head"><h4>Flat White</h4><span class="mi-lead"></span><span class="mi-price">5,50&nbsp;$</span></div></div>
+      <div class="mi reveal"><div class="mi-head"><h4 data-fr="Chocolat chaud" data-en="Hot chocolate">Chocolat chaud</h4><span class="mi-lead"></span><span class="mi-price">4,00 · 4,50 · 5,00&nbsp;$</span></div></div>
+    </div>
+
+    <div class="menu-sub" data-fr="Boissons diverses" data-en="Other drinks">Boissons diverses</div>
+    <div class="mi-list">
+      <div class="mi reveal"><div class="mi-head"><h4>Matcha Latte</h4><span class="mi-tag new" data-fr="Nouveau" data-en="New">Nouveau</span><span class="mi-lead"></span><span class="mi-price">5,50 · 6,50&nbsp;$</span></div></div>
+      <div class="mi reveal"><div class="mi-head"><h4>Chaï Latte</h4><span class="mi-lead"></span><span class="mi-price">5,50 · 6,50&nbsp;$</span></div></div>
+      <div class="mi reveal"><div class="mi-head"><h4>Blue Matcha</h4><span class="mi-tag new" data-fr="Nouveau" data-en="New">Nouveau</span><span class="mi-lead"></span><span class="mi-price">7,50&nbsp;$</span></div></div>
+      <div class="mi reveal"><div class="mi-head"><h4>London Fog</h4><span class="mi-lead"></span><span class="mi-price">6,50&nbsp;$</span></div></div>
+      <div class="mi reveal"><div class="mi-head"><h4 data-fr="Thé / Tisane" data-en="Tea / Herbal">Thé / Tisane</h4><span class="mi-lead"></span><span class="mi-price">4,50&nbsp;$</span></div></div>
+      <div class="mi reveal"><div class="mi-head"><h4 data-fr="Thé Camellia" data-en="Camellia tea">Thé Camellia</h4><span class="mi-lead"></span><span class="mi-price">6,00&nbsp;$</span></div></div>
+      <div class="mi reveal"><div class="mi-head"><h4 data-fr="Verre de lait" data-en="Glass of milk">Verre de lait</h4><span class="mi-lead"></span><span class="mi-price">3,50&nbsp;$</span></div></div>
+      <div class="mi reveal"><div class="mi-head"><h4 data-fr="Limonade maison" data-en="House lemonade">Limonade maison</h4><span class="mi-lead"></span><span class="mi-price">5,50&nbsp;$</span></div></div>
+    </div>
+
+    <div class="extras-bar reveal">
+      <span class="et" data-fr="Extras" data-en="Extras">Extras</span>
+      <span class="ex"><b data-fr="lait alternatif" data-en="alt milk">lait alternatif</b> 1,00&nbsp;$</span><span class="ex"><b data-fr="shot d'espresso" data-en="espresso shot">shot d'espresso</b> 2,00&nbsp;$</span><span class="ex"><b data-fr="sirops / érable / miel" data-en="syrups / maple / honey">sirops / érable / miel</b> 0,75&nbsp;$</span><span class="ex"><b data-fr="lait / crème" data-en="milk / cream">lait / crème</b> 0,50&nbsp;$</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOISSONS FROIDES ============ -->
+<section class="menu-section" id="froid">
+  <div class="wrap">
+    <div class="menu-section-head reveal">
+      <h2 data-fr="Boissons <em>froides</em>" data-en="<em>Cold</em> drinks">Boissons <em>froides</em></h2>
+    </div>
+
+    <div class="menu-sub" data-fr="Glacé" data-en="Iced">Glacé</div>
+    <div class="mi-list">
+      <div class="mi reveal"><div class="mi-head"><h4 data-fr="Latte glacé" data-en="Iced latte">Latte glacé</h4><span class="mi-lead"></span><span class="mi-price">6,50&nbsp;$</span></div></div>
+      <div class="mi reveal"><div class="mi-head"><h4 data-fr="Café glacé" data-en="Iced coffee">Café glacé</h4><span class="mi-lead"></span><span class="mi-price">5,00&nbsp;$</span></div></div>
+      <div class="mi reveal"><div class="mi-head"><h4 data-fr="Americano glacé" data-en="Iced americano">Americano glacé</h4><span class="mi-lead"></span><span class="mi-price">5,00&nbsp;$</span></div></div>
+      <div class="mi reveal"><div class="mi-head"><h4 data-fr="Mochaccino glacé" data-en="Iced mochaccino">Mochaccino glacé</h4><span class="mi-lead"></span><span class="mi-price">6,95&nbsp;$</span></div></div>
+      <div class="mi reveal"><div class="mi-head"><h4 data-fr="Matcha Latte glacé" data-en="Iced matcha latte">Matcha Latte glacé</h4><span class="mi-lead"></span><span class="mi-price">6,50&nbsp;$</span></div></div>
+      <div class="mi reveal"><div class="mi-head"><h4 data-fr="Chaï Latte glacé" data-en="Iced chai latte">Chaï Latte glacé</h4><span class="mi-lead"></span><span class="mi-price">6,50&nbsp;$</span></div></div>
+      <div class="mi reveal"><div class="mi-head"><h4 data-fr="Blue Matcha glacé" data-en="Iced blue matcha">Blue Matcha glacé</h4><span class="mi-lead"></span><span class="mi-price">8,50&nbsp;$</span></div></div>
+      <div class="mi reveal"><div class="mi-head"><h4>Affogato</h4><span class="mi-tag sig" data-fr="Signature" data-en="Signature">Signature</span><span class="mi-lead"></span><span class="mi-price">8,50&nbsp;$</span></div></div>
+    </div>
+
+    <div class="menu-sub" data-fr="Breuvages" data-en="Beverages">Breuvages</div>
+    <div class="mi-list">
+      <div class="mi reveal"><div class="mi-head"><h4>Coca-Cola</h4><span class="mi-lead"></span><span class="mi-price">2,75&nbsp;$</span></div>
+        <p class="mi-desc" data-fr="Régulier, diète, zéro." data-en="Regular, diet, zero.">Régulier, diète, zéro.</p></div>
+      <div class="mi reveal"><div class="mi-head"><h4>Pepsi</h4><span class="mi-lead"></span><span class="mi-price">2,75&nbsp;$</span></div>
+        <p class="mi-desc" data-fr="Régulier, diète." data-en="Regular, diet.">Régulier, diète.</p></div>
+      <div class="mi reveal"><div class="mi-head"><h4>Canada Dry</h4><span class="mi-lead"></span><span class="mi-price">2,75&nbsp;$</span></div></div>
+      <div class="mi reveal"><div class="mi-head"><h4>Fanta</h4><span class="mi-lead"></span><span class="mi-price">2,75&nbsp;$</span></div></div>
+      <div class="mi reveal"><div class="mi-head"><h4>Perrier</h4><span class="mi-lead"></span><span class="mi-price">3,75&nbsp;$</span></div></div>
+      <div class="mi reveal"><div class="mi-head"><h4>Jus O'ASIS</h4><span class="mi-lead"></span><span class="mi-price">3,75&nbsp;$</span></div>
+        <p class="mi-desc" data-fr="Pomme, orange." data-en="Apple, orange.">Pomme, orange.</p></div>
+      <div class="mi reveal"><div class="mi-head"><h4 data-fr="Montellier / Esca" data-en="Montellier / Esca">Montellier / Esca</h4><span class="mi-lead"></span><span class="mi-price">2,50&nbsp;$</span></div>
+        <p class="mi-desc" data-fr="Eau gazeuse." data-en="Sparkling water.">Eau gazeuse.</p></div>
+      <div class="mi reveal"><div class="mi-head"><h4 data-fr="Bouteille d'eau Esca" data-en="Esca water bottle">Bouteille d'eau Esca</h4><span class="mi-lead"></span><span class="mi-price">1,75&nbsp;$</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOT CTA ============ -->
+<section class="menu-foot-cta">
+  <div class="wrap">
+    <h2 data-fr="On vous garde une <em>table</em> ?" data-en="Shall we save you a <em>table</em>?">On vous garde une <em>table</em> ?</h2>
+    <p data-fr="Sans réservation, passez quand l'envie vous prend, entre 8h et 16h." data-en="Walk-ins only, drop by whenever, between 8am and 4pm.">Sans réservation, passez quand l'envie vous prend, entre 8h et 16h.</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+      <a class="btn btn-solid" href="index.html#visiter" data-fr="Nous trouver" data-en="Find us">Nous trouver</a>
+      <a class="btn btn-ghost" href="tel:+14383808311">(438) 380-8311</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <p data-fr="Café tranquille sans ordinateurs au cœur du Vieux-Port. Cuisine européenne, brunch et café de spécialité." data-en="A calm, laptop-free café in the heart of Old Port. European cuisine, brunch and specialty coffee.">Café tranquille sans ordinateurs au cœur du Vieux-Port. Cuisine européenne, brunch et café de spécialité.</p>
+        <nav class="socials" aria-label="Réseaux sociaux">
+          <a href="#" data-social="instagram" aria-label="Instagram">
+            <img src="images/social/instagram.svg" alt="" width="20" height="20" decoding="async">
+          </a>
+        </nav>
+      </div>
+      <div class="footer-col">
+        <h4 data-fr="Visiter" data-en="Visit">Visiter</h4>
+        <ul><li>243 Rue Notre-Dame O.</li><li>Montréal, QC H2Y 1T4</li><li><a href="tel:+14383808311">(438) 380-8311</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-fr="Heures" data-en="Hours">Heures</h4>
+        <ul><li data-fr="Tous les jours · 8h – 16h" data-en="Every day · 8am – 4pm">Tous les jours · 8h – 16h</li></ul>
+      </div>
+    </div>
+    <div class="footer-mark">
+      <a class="footer-logo" href="index.html" aria-label="Cafeterra, Café &amp; Pâtisseries">
+        <img src="images/logo/cafeterra-logo-white-dnu.png" alt="" width="120" height="120" decoding="async">
+      </a>
+    </div>
+    <div class="footer-bot">
+      <span>© <span id="yr"></span> Cafeterra. <span data-fr="Tous droits réservés." data-en="All rights reserved.">Tous droits réservés.</span></span>
+      <a href="index.html" data-fr="Retour à l'accueil" data-en="Back to home">Retour à l'accueil</a>
+    </div>
+  </div>
+</footer>
+
+<div class="menu-photo-lightbox" id="menu-photo-lightbox" hidden aria-hidden="true">
+  <button type="button" class="menu-photo-lightbox__close" data-fr="Fermer" data-en="Close" data-i18n-attr="aria-label" aria-label="Fermer">&times;</button>
+  <figure class="menu-photo-lightbox__frame">
+    <img src="" alt="">
+    <figcaption></figcaption>
+  </figure>
+</div>
+
+<script src="site.js"></script>
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  // active category chip on scroll
+  (function(){
+    var links=[].slice.call(document.querySelectorAll('.cat-nav a'));
+    var map=links.map(function(a){return {a:a,sec:document.querySelector(a.getAttribute('href'))};}).filter(function(m){return m.sec;});
+    function upd(){
+      var y=window.scrollY+90;var cur=map[0];
+      map.forEach(function(m){if(m.sec.offsetTop<=y)cur=m;});
+      links.forEach(function(a){a.classList.toggle('active',a===cur.a);});
+    }
+    upd();window.addEventListener('scroll',upd,{passive:true});
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" aria-hidden="true">
+  <circle cx="100" cy="100" r="96" stroke="#2a2420" stroke-width="2"/>
+  <circle cx="100" cy="100" r="88.5" stroke="#2a2420" stroke-width=".8"/>
+
+  <defs>
+    <path id="cafeterra-top-arc-dark" d="M 44 86 A 56 56 0 0 1 156 86"/>
+  </defs>
+
+  <text fill="#2a2420" font-family="Helvetica, Arial, sans-serif" font-size="9.2" font-weight="600" letter-spacing="2.6">
+    <textPath href="#cafeterra-top-arc-dark" startOffset="50%" text-anchor="middle">CAFÉ &amp; PÂTISSERIES</textPath>
+  </text>
+
+  <circle cx="100" cy="94" r="23.5" stroke="#2a2420" stroke-width="1.6"/>
+
+  <path
+    fill="#2a2420"
+    d="M97.2 108.5c-1.2-7.8 2.8-14.2 9.2-17.8-.4 5.8 1.6 9.6 5.2 11.8 1.8-5.4 5.2-9.2 9.8-11.2-2.2 7.2-1.4 13.2 3.2 17.2-6.2 1.8-11.4-.2-15.2-4.6 3.6 2.6 7.8 3.8 12.4 2.8-4.2 3.4-8.8 4.8-14.6 3.8z"
+  />
+
+  <path d="M 36 139 Q 100 119 164 139" stroke="#2a2420" stroke-width="1.1"/>
+  <path d="M 36 153 Q 100 173 164 153" stroke="#2a2420" stroke-width="1.1"/>
+
+  <text
+    x="100"
+    y="150.5"
+    fill="#2a2420"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="14.5"
+    font-weight="600"
+    letter-spacing="2.8"
+    text-anchor="middle"
+  >CAFÉTERRA</text>
+</svg>
