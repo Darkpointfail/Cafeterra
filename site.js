@@ -47,12 +47,18 @@
   function initNav() {
     var nav = document.querySelector('.nav');
     if (!nav) return;
-    var hero = document.querySelector('.hero') || document.querySelector('.menu-masthead');
+    var hero = document.querySelector('.hero');
+    var mobileMq = window.matchMedia('(max-width: 1024px)');
     var trigger = hero ? function () { return window.scrollY > (hero.offsetHeight - 90); }
                        : function () { return window.scrollY > 20; };
-    function upd() { nav.classList.toggle('solid', trigger()); }
+    function upd() {
+      if (mobileMq.matches) nav.classList.remove('solid');
+      else nav.classList.toggle('solid', trigger());
+    }
     upd();
     window.addEventListener('scroll', upd, { passive: true });
+    if (mobileMq.addEventListener) mobileMq.addEventListener('change', upd);
+    else mobileMq.addListener(upd);
   }
 
   /* ---------- mobile drawer ---------- */

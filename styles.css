@@ -555,11 +555,22 @@ p{margin:0}
   .nav-burger{display:flex;position:relative;z-index:3}
   .nav-cluster--left .lang{display:none}
   .nav{
-    position:relative;
+    position:absolute;top:0;left:0;right:0;
     --nav-mobile-height:clamp(108px,26vw,128px);
     padding-block:16px 32px;
+    background:transparent;
+    box-shadow:none;
+    backdrop-filter:none;
+    -webkit-backdrop-filter:none;
   }
-  .nav.solid{padding-block:14px 28px}
+  .nav.solid{
+    padding-block:14px 28px;
+    background:transparent;
+    box-shadow:none;
+    backdrop-filter:none;
+    -webkit-backdrop-filter:none;
+  }
+  .nav.solid .nav-logo img{filter:none}
   .nav-bar{
     gap:12px;min-height:76px;
     padding-left:clamp(8px,2.5vw,16px);
@@ -571,9 +582,9 @@ p{margin:0}
     z-index:2;gap:0;
   }
   .nav-logo img{width:clamp(88px,22vw,108px)}
-  .hero{margin-top:calc(-1 * var(--nav-mobile-height))}
   .hero-inner{padding-top:var(--nav-mobile-height)}
   .menu-masthead{padding-top:0}
+  .menu-masthead .wrap{padding-top:var(--nav-mobile-height)}
   .about-grid{grid-template-columns:1fr;gap:48px}
   .spec-grid{grid-template-columns:repeat(2,1fr)}
   .menu-cats{grid-template-columns:1fr}
