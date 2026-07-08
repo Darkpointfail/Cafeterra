@@ -47,7 +47,7 @@
   function initNav() {
     var nav = document.querySelector('.nav');
     if (!nav) return;
-    var hero = document.querySelector('.hero');
+    var hero = document.querySelector('.hero') || document.querySelector('.menu-masthead');
     var trigger = hero ? function () { return window.scrollY > (hero.offsetHeight - 90); }
                        : function () { return window.scrollY > 20; };
     function upd() { nav.classList.toggle('solid', trigger()); }
