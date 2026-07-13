@@ -15,6 +15,7 @@ Remplacez ces fichiers par vos photos (**JPG ou PNG**, pas HEIC) :
 | `croissant-saumon-fume.jpg` | Croissant saumon fumé |
 | `toast-avocat-saumon.jpg` | Toast avocat & saumon |
 | `toast-avocat-vegetarien.jpg` | Toast avocat végétarien |
+| `salade-poulet-parmesan.jpg` | Salade poulet grillé & parmesan |
 
 Depuis Downloads (HEIC → JPG automatique) :
 
