@@ -11,7 +11,6 @@ Remplacez ces fichiers par vos photos (**JPG ou PNG**, pas HEIC) :
 | `croissant-jambon-fromage.jpg` | Image 5 |
 | `croissant-oeuf-bacon.jpg` | Image 6 |
 | `petit-dejeuner-norvegien.jpg` | Petit-déjeuner norvégien |
-| `roti-de-boeuf.jpg` | Rôti de bœuf |
 | `croissant-saumon-fume.jpg` | Croissant saumon fumé |
 | `toast-avocat-saumon.jpg` | Toast avocat & saumon |
 | `toast-avocat-vegetarien.jpg` | Toast avocat végétarien |
